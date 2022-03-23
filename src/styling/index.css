@@ -1,0 +1,100 @@
+/* Pamela Middleton, Feb. 11, 2022, index.css */
+
+/* Reset Style Rule */
+h1, h2, p, nav, ul, a, div, article, aside, section, figure, figcaption{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+    font-family: "Sofia", sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Sofia');
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+}
+/* main */
+.container{
+    background-color:#0077b3;
+}
+.nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+}
+/* Navbar */
+
+#navButton{
+    border: groove;
+    border-width: 10px;
+    border-color: purple;
+    border-radius: 10px;
+    padding-left:10%;
+    padding-right:10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-color: purple;
+    color:black;
+    text-decoration: none;
+}
+/* pseudo-class code */
+/* div:hover{
+background-color: gray;
+} */
+/* Smartphone Viewport */
+@media (max-width: 800px) {
+    .nav{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    #navButton{
+        width: 78%;
+
+    }
+}
+/* Tablet viewport */
+@media (max-width: 1000px) {
+    .nav{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    #navButton{
+        width: 78%;
+
+    }
+}
+/* images */
+    img, aside{
+        height:auto;
+        width:50%;
+        display: block;
+    }
+    .penPic{
+        width:30%;
+        margin: 10px;
+        box-shadow: 10px 5px 5px black;
+    }
+
+/* header */
+h1, h2, h3, figcaption{
+    color : #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+}
+
+/* footer */
+footer{
+    background-color: #0077b3;
+}
+
+#penContainer{
+    display: flex;
+    flex-wrap:wrap;
+}
